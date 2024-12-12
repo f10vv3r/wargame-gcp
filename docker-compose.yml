@@ -1,0 +1,45 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/wargame
+      - /wargame/node_modules
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8.0.40
+    environment:
+      MYSQL_ROOT_PASSWORD: chlgustjr05@
+      MYSQL_DATABASE: wargame
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./wargame.sql:/docker-entrypoint-initdb.d/wargame.sql
+    ports:
+      - "3307:3306"
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports: 
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - web 
+    networks:
+      - app-network
+    restart: always
+
+volumes:
+  db_data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

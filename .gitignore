@@ -1,0 +1,4 @@
+.env
+upload/
+./src/workspace
+./node_modules/ssh2/test/fixtures/id_rsa

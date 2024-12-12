@@ -1,0 +1,267 @@
+server running success
+server running success
+server running success
+server running success
+[33m[nodemon] 3.1.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node app.js`[39m
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:260:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:677:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.20.4
+server running success
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/ubuntu/server/wargame/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/app.js:33:5)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+
+Node.js v18.20.4
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/ubuntu/server/wargame/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/app.js:33:5)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+
+Node.js v18.20.4
+server running success
+server running success
+server running success
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/ubuntu/server/wargame/src/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/app.js:33:5)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v18.20.4
+server running success
+Connected to the database.
+Database connection closed.
+server running success
+Connected to the database.
+Database connection closed.
+Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/ubuntu/server/wargame/src/node_modules/mysql2/lib/connection.js:164:17)
+    at Connection.query (/home/ubuntu/server/wargame/src/node_modules/mysql2/lib/connection.js:575:17)
+    at Object.signupUser (/home/ubuntu/server/wargame/src/models/signup.js:27:10)
+    at exports.handleSignup (/home/ubuntu/server/wargame/src/controllers/signup.controller.js:11:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/server/wargame/src/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/index.js:346:12) {
+  fatal: true
+}
+[33m[nodemon] 3.1.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node app.js`[39m
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:260:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:677:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.20.4
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/ubuntu/server/wargame/src/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/app.js:41:5)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v18.20.4
+server running success
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/ubuntu/server/wargame/src/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/app.js:41:5)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v18.20.4
+server running success
+server running success
+JWT verification failed: JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/ubuntu/server/wargame/src/node_modules/jsonwebtoken/verify.js:60:17)
+    at exports.renderUploadPage (/home/ubuntu/server/wargame/src/controllers/upload.controller.js:31:30)
+    at Layer.handle [as handle_request] (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/server/wargame/src/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/ubuntu/server/wargame/src/node_modules/express/lib/router/index.js:175:3)
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'multer'
+Require stack:
+- /home/ubuntu/server/wargame/src/routes/admin.route.js
+- /home/ubuntu/server/wargame/src/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/routes/admin.route.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/ubuntu/server/wargame/src/routes/admin.route.js',
+    '/home/ubuntu/server/wargame/src/app.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'multer'
+Require stack:
+- /home/ubuntu/server/wargame/src/routes/admin.route.js
+- /home/ubuntu/server/wargame/src/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/ubuntu/server/wargame/src/routes/admin.route.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/ubuntu/server/wargame/src/routes/admin.route.js',
+    '/home/ubuntu/server/wargame/src/app.js'
+  ]
+}
+
+Node.js v18.20.4
+server running success
+1
