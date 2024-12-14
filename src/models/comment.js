@@ -4,10 +4,12 @@ require("dotenv").config({ path: __dirname + "/config/.env" });
 
 const user = process.env.MySQL_user;
 const pass = process.env.MySQL_pass;
+const mysqlPort = process.env.MySQL_port;
+const host = process.env.DB_host;
 
 const conn = mysql.createPool({
-    host: "localhost",
-    port: 3306,
+    host: host,
+    port: mysqlPort,
     user: user,
     password: pass,
     database: "wargame",
