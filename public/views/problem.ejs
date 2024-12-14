@@ -540,6 +540,7 @@
                 <% } %>
                 </span></h2>
             
+                <% if (posts.currentUsrContent.flag && posts.currentUsrContent.flag.pro_idx != null) { %>
             <% for (let i = 0; i < posts.currentUsrContent.flag.pro_idx.length; i++) { %>
                 <% if (posts.currentUsrContent.flag.pro_idx[i] == posts.problemContent.pro_idx) { %>
                     <form method="post" action="./problem/vote">
@@ -560,6 +561,7 @@
                         </div>
                     </form>
                 <% } %>
+            <% } %>
             <% } %>
         </div>
 

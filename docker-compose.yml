@@ -14,14 +14,16 @@ services:
   db:
     image: mysql:8.0.40
     environment:
-      MYSQL_ROOT_PASSWORD: chlgustjr05@
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: wargame
     volumes:
       - db_data:/var/lib/mysql
       - ./wargame.sql:/docker-entrypoint-initdb.d/wargame.sql
     ports:
-      - "3307:3306"
+      - "3306:3306"
     restart: always
+    networks:
+      - app-network
 
   nginx:
     image: nginx:latest

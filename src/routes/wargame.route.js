@@ -28,6 +28,7 @@ router.post("/upload", (req, res, next) => {
     
     uploadController.uploadMiddleware(req, res, (err) => {
         if (err) {
+            console.error("Routes | upload => uploadMiddleware", err);
             return res.send(`<script>alert("Warning: Upload Fail"); window.location.href = '/';</script>`);
         }
         
