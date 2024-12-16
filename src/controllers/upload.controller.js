@@ -47,9 +47,6 @@ async function extractZipFile(zipPath, outputDir) {
 // 도커 빌드 함수
 async function runDocker(serverFilePath) {
     const dockerComposePath = path.join(serverFilePath, 'docker-compose.yml');
-    if (!fs.existsSync(dockerComposePath)) {
-        throw new Error('docker-compose.yml 파일이 없습니다.');
-    }
 
     return new Promise((resolve, reject) => {
         const dockerCompose = spawn('docker-compose', ['-f', dockerComposePath, 'up', '--build']);

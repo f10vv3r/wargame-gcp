@@ -792,3 +792,70 @@ stdout: nginx-1  | 159.65.25.16 - - [14/Dec/2024:11:33:17 +0000] "GET /get.php H
 
 stdout: nginx-1  | 154.213.184.18 - - [14/Dec/2024:11:40:03 +0000] "CONNECT example.com:443 HTTP/1.1" 400 157 "-" "-"
 
+server running success
+server running success
+JWT verification failed: JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/ubuntu/wargame/src/node_modules/jsonwebtoken/verify.js:60:17)
+    at exports.renderWargamePage (/home/ubuntu/wargame/src/controllers/wargame.controller.js:10:30)
+    at Layer.handle [as handle_request] (/home/ubuntu/wargame/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/wargame/src/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/ubuntu/wargame/src/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/wargame/src/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/wargame/src/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/ubuntu/wargame/src/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/wargame/src/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/ubuntu/wargame/src/node_modules/express/lib/router/index.js:175:3)
+server running success
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1811:16)
+    at listenInCluster (node:net:1859:12)
+    at Server.listen (node:net:1947:7)
+    at Function.listen (/home/ubuntu/wargame/src/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/wargame/src/app.js:57:5)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1838:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v18.19.0
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1811:16)
+    at listenInCluster (node:net:1859:12)
+    at Server.listen (node:net:1947:7)
+    at Function.listen (/home/ubuntu/wargame/src/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ubuntu/wargame/src/app.js:57:5)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1838:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v18.19.0
+server running success
